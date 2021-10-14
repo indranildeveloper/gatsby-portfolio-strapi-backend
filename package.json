@@ -1,0 +1,40 @@
+{
+  "name": "portfolio-api",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "graphql": "^15.5.0",
+    "knex": "0.21.18",
+    "sqlite3": "5.0.0",
+    "strapi": "3.6.1",
+    "strapi-admin": "3.6.1",
+    "strapi-connector-bookshelf": "3.6.1",
+    "strapi-plugin-content-manager": "3.6.1",
+    "strapi-plugin-content-type-builder": "3.6.1",
+    "strapi-plugin-email": "3.6.1",
+    "strapi-plugin-i18n": "3.6.1",
+    "strapi-plugin-upload": "3.6.1",
+    "strapi-plugin-users-permissions": "3.6.1",
+    "strapi-provider-upload-cloudinary": "^3.6.2",
+    "strapi-utils": "3.6.1"
+  },
+  "author": {
+    "name": "Indranil Halder"
+  },
+  "strapi": {
+    "uuid": "b4d31f62-4eab-4a25-ba02-b8ced51c2741"
+  },
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": "^6.0.0"
+  },
+  "license": "MIT"
+}

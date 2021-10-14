@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "name": "blog"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "gatsby",
+        "javascript",
+        "react",
+        "html",
+        "css",
+        "nodejs",
+        "expressjs",
+        "mern",
+        "angular",
+        "strapi",
+        "wordpress",
+        "php",
+        "mysqli",
+        "mongodb",
+        "graphql",
+        "python",
+        "django",
+        "programming"
+      ],
+      "required": true,
+      "default": "programming"
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "date": {
+      "type": "date"
+    }
+  }
+}
